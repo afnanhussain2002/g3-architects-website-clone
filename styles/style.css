@@ -21,12 +21,15 @@
 
   header{
     background-color: #FFF4E6;
+    
   }
 
   nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 50px 150px;
+    
   }
   nav ul {
     display: flex;
@@ -45,6 +48,7 @@
   .container{
     text-align: center;
     margin: 0 auto;
+    
   }
   .header-titel{
     font-size: 2.8rem;
@@ -52,17 +56,30 @@
   }
   .header-description{
     color: #727272;
-    width: 800px;
     margin: 0 auto;
     padding-top: 30px;
+    width: 800px;
   }
+  
   .container-img{
     max-width: 1240px;
-    margin: 30px auto;
+    margin: 30px auto;  
   }
-
   .container-img img{
     width: 100%;
+  }
+
+  /* css media queary */
+
+  @media screen and (max-width:576px) {
     
-    
+    nav{
+      flex-direction: column;
+      padding: 20px;
+      
+    }
+    .header-description{
+      width: 100%;
+    }
+   
   }
